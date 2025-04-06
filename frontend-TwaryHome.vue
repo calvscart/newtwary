@@ -10,7 +10,7 @@
         <h2>Available Endpoints</h2>
         <div class="endpoint-card">
           <a href="/fun/paptsunee" target="_blank">
-            <h3>/api/color</h3>
+            <h3>/fun/paptsunee</h3>
             <p>Get a free photo of Kitsu</p>
           </a>
         </div>
@@ -47,7 +47,7 @@ import { ref } from 'vue';
 const word = ref('');
 
 const getRandomWord = async () => {
-  const response = await fetch('https://mewtwary/api/random-word');
+  const response = await fetch('https://your-vercel-project.vercel.app/api/random-word');
   const data = await response.json();
   word.value = data.word;
 };
